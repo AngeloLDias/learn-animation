@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-image: url("./images/navespace.jpg");
+  background-image: url('/images/805180.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -21,16 +21,32 @@ body {
   /* BACKGROUND-POSITION: center; */
 }
 
+.container-nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  margin-left: -113px;
+}
+
+.nave {
+  position: absolute;
+}
+
 header {
   margin-top: 16px;
   position: fixed;
   width: 100%;
 }
+
 header ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 header ul li {
   color: white;
   color: white;
@@ -45,19 +61,24 @@ section {
   justify-content: center;
   margin: 0px 30px;
 }
+
 section div {
   display: flex;
   flex-direction: column;
 }
+
 section div p {
   color: white;
 }
+
 section div p:nth-child(1) {
   font-size: 20px;
 }
+
 section div p:nth-child(2) {
   font-size: 50px;
 }
+
 section div p:nth-child(3) {
   font-size: 50px;
 }

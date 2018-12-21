@@ -11,14 +11,16 @@
 </head>
 
 <body>
-
+    <div class="container-nav">
+        <img class="nave" src="/images/Sem-Título-1.png" alt="">
+    </div>
     <header>
         <ul>
             <li> <img src="images/icons8-partilhar.svg" alt=""></li>
-            <li>WORK</li>
-            <li>ABOUT</li>
-            <li>TEAM</li>
-            <li>CONTACT</li>
+            <li class="li1">WORK</li>
+            <li class="li2">ABOUT</li>
+            <li class="li3">TEAM</li>
+            <li class="li4">CONTACT</li>
         </ul>
 
     </header>
@@ -37,6 +39,13 @@
         const title = document.querySelectorAll('.title');
         const title2 = document.querySelectorAll('.title2');
         const title3 = document.querySelectorAll('.title3');
+
+        const li1 = document.querySelectorAll('.li1');
+        const li2 = document.querySelectorAll('.li2');
+        const li3 = document.querySelectorAll('.li3');
+        const li4 = document.querySelectorAll('.li4');
+
+        const nave = document.querySelectorAll('.nave');
         // TweenMax.fromTo(title, 5,{
         //      x: -100
         // }, {
@@ -44,17 +53,40 @@
         //     x: 500
         // })
 
-        TweenMax.from(title,1,{
-            x:300,
+        TweenMax.from(title, 1, {
+            x: 300,
             opacity: 0
         })
-        TweenMax.from(title2,1,{
-            y:300,
+        TweenMax.from(title2, 2, {
+            y: 300,
             opacity: 0
         })
-        TweenMax.from(title3,3,{
+        TweenMax.from(title3, 3, {
             opacity: 0
-        })  
+        })
+
+        TweenMax.from(li1, 3, {
+            y: 300,
+            opacity: 0
+        })
+        TweenMax.from(li2, 3, {
+            y: 350,
+            opacity: 0
+        })
+        TweenMax.from(li3, 3, {
+            y: 200,
+            opacity: 0
+        })
+        TweenMax.from(li4, 3, {
+            y: 250,
+            opacity: 0
+        })
+        TweenMax.from(nave, 2, {
+            // y: 250,
+            opacity: 0,
+            scale:0,
+            delay:.7
+        })
     </script>
 </body>
 
