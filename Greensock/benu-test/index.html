@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GreenSock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li> <img src="images/icons8-partilhar.svg" alt=""></li>
+            <li>WORK</li>
+            <li>ABOUT</li>
+            <li>TEAM</li>
+            <li>CONTACT</li>
+        </ul>
+
+    </header>
+
+    <section>
+        <div>
+            <p class="title3">ABACO</p>
+            <p class="title">EXPLORE</p>
+            <p class="title2">THE UNIVERSE.</p>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <script>
+        const title = document.querySelectorAll('.title');
+        const title2 = document.querySelectorAll('.title2');
+        const title3 = document.querySelectorAll('.title3');
+        // TweenMax.fromTo(title, 5,{
+        //      x: -100
+        // }, {
+        //     // color: '#green'
+        //     x: 500
+        // })
+
+        TweenMax.from(title,1,{
+            x:300,
+            opacity: 0
+        })
+        TweenMax.from(title2,1,{
+            y:300,
+            opacity: 0
+        })
+        TweenMax.from(title3,3,{
+            opacity: 0
+        })  
+    </script>
+</body>
+
+</html>
